@@ -6,7 +6,7 @@ cd formation
 ```
 
 ## Wallpaper
-- Open Louie Mantia's [Juxtaposition Wallpaper](http://reserve.louie.land/Wallpapers/Juxtaposition/Juxtaposition%20-%20Desktop.jpg) in Safari and use right click > set as wallpaper to
+- Open Louie Mantia's [Juxtaposition Wallpaper](http://reserve.louie.land/Wallpapers/Juxtaposition/Juxtaposition%20-%20Desktop.jpg) in Safari and use right click > set as wallpaper
 
 ## 1Password
 - Open 1Password and sync in via iCloud
@@ -52,9 +52,6 @@ cd formation
 ## Internet accounts
 - Open “Internet accounts” pref pane and enable relevant services, iCloud keychain should bring them over
 
-## Dropbox
-- Disable selective sync (Sync all folders)
-
 ## Mail
 - Enable contact images in Mail app
 - Show most recent messages at the top of conversations
@@ -74,3 +71,6 @@ ssh-keygen -p
 
 ## Contacts
 - Sort by first name
+
+## Dropbox
+- Disable selective sync (Sync all folders)
