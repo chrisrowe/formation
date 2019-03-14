@@ -4,6 +4,7 @@ git
 hub
 mas
 rbenv
+fzf
 php
 mysql@5.7
 wget
