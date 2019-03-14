@@ -639,6 +639,7 @@ label_green() {
 
 e_lemon_ated() {
     printf "
-  ${bold}Congrats! You're in formation!${normal}
+  ${bold}Congrats! You're in formation!${normal} 🍋
+  Go ahead and complete the rest of the stuff in the readme!
 "
 }
