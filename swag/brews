@@ -4,6 +4,7 @@ git
 hub
 mas
 rbenv
+fasd
 fzf
 php
 mysql@5.7
