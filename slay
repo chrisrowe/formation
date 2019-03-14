@@ -203,11 +203,7 @@ chapter "Customizing macOS…"
 chsh -s /bin/zsh
 print_success "Changing shell to ZSH"
 
-
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found please call Chris Rowe ((@chrisrowe on +44 7590 608750 for a reward."
 print_success "Setting lock screen 'If found' message"
 
-###############################################################################
-# 🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋
-###############################################################################
 e_lemon_ated
