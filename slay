@@ -210,9 +210,11 @@ print_success "Sensible global .gitignore"
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found please call Chris Rowe on  +44 7590 608750 or email mail@chrisrowe.net"
 print_success "Setting lock screen 'If found' message"
 
-# Enable ZSH https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
-chsh -s /bin/zsh
+# Enable ZSH and install Oh My Zsh
 print_success "Changing shell to ZSH"
+chsh -s /bin/zsh
+print_success "Installing Oh My Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Enable FZF https://github.com/junegunn/fzf
 $(brew --prefix)/opt/fzf/install
