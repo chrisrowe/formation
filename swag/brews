@@ -1,9 +1,9 @@
-asciinema
+bat
+composer
 git
-tig
-mas
-wget
 hub
-hugo
-yarn
+mas
 rbenv
+wget
+yarn
+zsh
