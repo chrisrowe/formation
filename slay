@@ -315,7 +315,8 @@ killall Finder
 print_success "Finder"
 killall SystemUIServer
 print_success "SystemUIServer"
-killall Terminal
-print_success "Terminal"
+
+source ~/.zshrc
+print_success "Reloaded ZSH"
 
 e_lemon_ated
