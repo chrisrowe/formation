@@ -305,5 +305,14 @@ defaults write com.apple.dock wvous-tr-corner -int 10
 defaults write com.apple.dock wvous-tr-modifier -int 0
 print_success "Set hot corner"
 
+chapter "Rebooting all the things…"
+killall Dock
+print_success "Dock"
+killall Finder
+print_success "Finder"
+killall SystemUIServer
+print_success "SystemUIServer"
+killall Terminal
+print_success "Terminal"
 
 e_lemon_ated
