@@ -206,7 +206,7 @@ git config --global core.editor nano
 print_success "Sensible global .gitignore"
 
 # Add login message https://www.lifewire.com/add-login-message-os-x-using-terminal-2260758
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found please call Chris Rowe ((@chrisrowe on +44 7590 608750 for a reward."
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found please call Chris Rowe on  +44 7590 608750 or email mail@chrisrowe.net"
 print_success "Setting lock screen 'If found' message"
 
 # Enable ZSH https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
