@@ -68,9 +68,9 @@ chapter "Installing Dependencies…"
 # -----------------------------------------------------------------------------
 # NVM
 # -----------------------------------------------------------------------------
-if [ -x "$(command -v nvm)" ]; then
+if ! [ -x "$(command -v nvm)" ]; then
 	step "Installing NVM…"
-	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 	print_success "NVM installed!"
 	step "Installing latest Node…"
 	nvm install node
@@ -128,7 +128,7 @@ if [[ $(cli_is_installed 'valet') == 0 ]]; then
   cp -R testsite ~/Sites/
   open http://testsite.test
 else
-  print_success_muted "Valet already installed. Skipping."
+  print_success_muted "valet already installed. Skipping."
 fi
 
 ###############################################################################
