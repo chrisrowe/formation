@@ -146,6 +146,17 @@ if [ -e $cwd/swag/brews ]; then
 fi
 
 ###############################################################################
+# INSTALL: Valet
+###############################################################################
+if [[ $(cli_is_installed 'valet') == 0 ]]; then
+  chapter "Installing Valet…"
+  composer global require laravel/valet
+  valet install
+else
+  print_success_muted "Valet already installed. Skipping."
+fi
+
+###############################################################################
 # UPDATE: Homebrew
 ###############################################################################
 chapter "Updating Homebrew formulae…"
