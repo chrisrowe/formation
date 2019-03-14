@@ -9,7 +9,6 @@ html-sketchapp-cli::html-sketchapp
 imageoptim-cli::imageOptim
 jslint::jslint
 nodemon::nodemon
-npmusic::npmusic
 prettier::prettier
 swiff::swiff
 tailwindcss::tailwindcss
