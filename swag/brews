@@ -5,6 +5,7 @@ hub
 mas
 rbenv
 php
+mysql@5.7
 wget
 yarn
 zsh
