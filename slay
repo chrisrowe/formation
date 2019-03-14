@@ -196,18 +196,16 @@ fi
 
 
 ###############################################################################
-# OPTIONAL: Customizations
+# Customizations
 ###############################################################################
-chapter "Adding hot sauce…"
-if [ -f "$HOME/.hot-sauce" ]; then
-	if ask "Do you want to add hot sauce?" Y; then
-		. "$HOME/.hot-sauce"; printf "\n  You got hot sauce in your bag. 🔥 ${bold}Swag.${normal}\n";
-	else
-		print_success_muted "Hot sauce declined. Skipped.";
-	fi
-else
-	print_warning "No ~/.hot-sauce found. Skipping."
-fi
+chapter "Customizing macOS…"
+
+chsh -s /bin/zsh
+print_success "Changing shell to ZSH"
+
+
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found please call Chris Rowe ((@chrisrowe on +44 7590 608750 for a reward."
+print_success "Setting lock screen 'If found' message"
 
 ###############################################################################
 # 🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋🍋
