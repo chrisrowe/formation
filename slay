@@ -200,10 +200,105 @@ fi
 ###############################################################################
 chapter "Customizing macOS…"
 
+# Add login message https://www.lifewire.com/add-login-message-os-x-using-terminal-2260758
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found please call Chris Rowe ((@chrisrowe on +44 7590 608750 for a reward."
+print_success "Setting lock screen 'If found' message"
+
+# Enable ZSH https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
 chsh -s /bin/zsh
 print_success "Changing shell to ZSH"
 
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found please call Chris Rowe ((@chrisrowe on +44 7590 608750 for a reward."
-print_success "Setting lock screen 'If found' message"
+# Enable FZF https://github.com/junegunn/fzf
+$(brew --prefix)/opt/fzf/install
+print_success "Enabling FZF"
+
+# Enable tap to click for current user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+print_success "Enable tap to click for current user and for the login screen"
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool tru
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+# Save to disk (not to iCloud) by default
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool fals
+# Disable the “Are you sure you want to open this application?” dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool fals
+# Use Dark menu bar and Dock
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
+# Show the ~/Library folder
+chflags nohidden ~/Library
+# Disable animations
+defaults write com.apple.finder DisableAllAnimations -bool true
+# Show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+# Show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+# Set default view style
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+print_success "Finder Tweaks"
+
+# Show item info near icons
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+# Show item info to the right of the icons
+/usr/libexec/PlistBuddy -c "Set DesktopViewSettings:IconViewSettings:labelOnBottom false" ~/Library/Preferences/com.apple.finder.plist
+# Enable snap-to-grid
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# Increase grid spacing
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
+# Increase the size of icons
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
+print_success "Desktop icon tweaks"
+
+# Set icon size
+defaults write com.apple.dock tilesize -int 80
+# Set minimize effect
+defaults write com.apple.dock mineffect -string "scale"
+# Enable minize into app icon
+defaults write com.apple.dock minimize-to-application -bool true
+# Remove running app indicators
+defaults write com.apple.dock show-process-indicators -bool false
+# Remove all icons from dock
+defaults write com.apple.dock persistent-apps -array
+# Remove icon bounce on launch
+defaults write com.apple.dock launchanim -bool false
+# Enable autohide
+defaults write com.apple.dock autohide -bool true
+# Remove autohide delay
+defaults write com.apple.dock autohide-delay -float 0
+# Reduce show animation duration
+defaults write com.apple.dock autohide-time-modifier -float 0.1
+print_success "Dock tweaks"
+
+# Remove alt char popup bubble when holding a key
+defaults write -g ApplePressAndHoldEnabled -bool false
+# Set key repeat to fastest
+defaults write NSGlobalDomain KeyRepeat -int 0
+# Set key repeat delay to shortest
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+# Disable automatic capitalisation
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+# Enable tabbing through all controls
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+print_success "Keyboard tweaks"
+
+# Remove Menubar transparency
+defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+# Remove app transparency
+sudo defaults write com.apple.universalaccess reduceTransparency -bool true
+print_success "Disabled UI Transparency"
+
+# Set clock format
+defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d H:mm"
+# Show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent YES
+print_success "Menubar tweaks"
+
+# Use top right to sleep display
+defaults write com.apple.dock wvous-tr-corner -int 10
+defaults write com.apple.dock wvous-tr-modifier -int 0
+print_success "Set hot corner"
+
 
 e_lemon_ated
