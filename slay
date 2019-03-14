@@ -225,12 +225,12 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 print_success "Enable tap to click for current user and for the login screen"
 
 # Expand save panel by default
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool tru
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 # Save to disk (not to iCloud) by default
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool fals
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 # Disable the “Are you sure you want to open this application?” dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool fals
+defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Use Dark menu bar and Dock
 defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
 # Show the ~/Library folder
