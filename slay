@@ -207,7 +207,7 @@ git config --global core.editor nano
 print_success "Sensible global .gitignore"
 
 # Add login message https://www.lifewire.com/add-login-message-os-x-using-terminal-2260758
-defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found please call Chris Rowe on  +44 7590 608750 or email mail@chrisrowe.net"
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found please call Chris Rowe on +44 7590 608750 or email mail@chrisrowe.net"
 print_success "Setting lock screen 'If found' message"
 
 # Enable ZSH and install Oh My Zsh
@@ -294,7 +294,7 @@ print_success "Keyboard tweaks"
 # Remove Menubar transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 # Remove app transparency
-defaults write com.apple.universalaccess reduceTransparency -bool true
+sudo defaults write com.apple.universalaccess reduceTransparency -bool true
 print_success "Disabled UI Transparency"
 
 # Set clock format
