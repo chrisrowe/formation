@@ -133,7 +133,7 @@ if [[ $(cli_is_installed 'valet') == 0 ]]; then
   echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.bashrc
   valet install
   brew services start mysql@5.7
-  mkdir ~/Sites
+  mkd ~/Sites
   cd ~/Sites
   valet park
   cd -
@@ -192,7 +192,6 @@ fi
 ###############################################################################
 chapter "Cleaning up Homebrew files…"
 brew cleanup 2> /dev/null
-brew cask cleanup 2> /dev/null
 
 ###############################################################################
 # INSTALL: npm packages
