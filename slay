@@ -129,6 +129,8 @@ fi
 if [[ $(cli_is_installed 'valet') == 0 ]]; then
   chapter "Installing Valet…"
   composer global require laravel/valet
+  export PATH="$PATH:$HOME/.composer/vendor/bin"
+  echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.bashrc
   valet install
 else
   print_success_muted "Valet already installed. Skipping."
