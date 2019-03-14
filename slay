@@ -135,6 +135,7 @@ if [[ $(cli_is_installed 'valet') == 0 ]]; then
   mkdir "~/Sites"
   cd "~/Sites"
   valet park
+  brew services start mysql@5.7
 else
   print_success_muted "Valet already installed. Skipping."
 fi
