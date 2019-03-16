@@ -7,7 +7,7 @@ rbenv
 fasd
 fzf
 php
-mysql@5.7
+mariadb@10.2
 wget
 yarn
 zsh
