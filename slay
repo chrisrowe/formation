@@ -45,20 +45,7 @@ chapter "Installing Dependencies…"
 # -----------------------------------------------------------------------------
 # NVM
 # -----------------------------------------------------------------------------
-if ! [ -x "$(command -v nvm)" ]; then
-  step "Installing NVM…"
-  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-  print_success "NVM installed!"
-  source ~/.bashrc
-  step "Installing latest Node…"
-  nvm install node
-  nvm use node
-  nvm run node --version
-  nodev=$(node -v)
-  print_success "Using Node $nodev!"
-else
-  print_success_muted "NVM/Node already installed. Skipping."
-fi
+
 
 # -----------------------------------------------------------------------------
 # Homebrew
