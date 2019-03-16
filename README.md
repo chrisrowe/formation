@@ -9,9 +9,9 @@ cd formation
 - Open Louie Mantia's [Juxtaposition Wallpaper](http://reserve.louie.land/Wallpapers/Juxtaposition/Juxtaposition%20-%20Desktop.jpg) in Safari and use right click > set as wallpaper
 
 ## 1Password
+- Add Good Work 1Password.com account
 - Open 1Password and sync in via iCloud
 - Enable Spotlight and 3rd party app integrations in Preferences > Advanced
-- Add Good Work 1Password.com account
 
 ## Dropbox
 - Open Dropbox, sign into Personal and Work
