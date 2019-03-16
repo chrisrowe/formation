@@ -1,18 +1,18 @@
-<h1>Valet is working!</h1>
-
-<h2>
 <?php
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password);
-
-// Check connection
 if ($conn->connect_error) {
-    die("Error connecting to DB: " . $conn->connect_error);
+    $db = "Error connecting to DB: " . $conn->connect_error;
+} else {
+    $db = "DB is connected!";
 }
-echo "DB connected!";
 ?>
+
+<h1 class="mb-4">Valet is installed!</h1>
+<h2>
+    You are running PHP <?php echo phpversion()?><br/>
+    <?php echo $db?>
 </h2>
