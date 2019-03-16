@@ -175,8 +175,8 @@ print_success "Setting lock screen 'If found' message"
 print_success "Changing shell to ZSH"
 chsh -s /bin/zsh
 print_success "Installing Oh My Zsh"
-curl -o- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
 cp dotfiles/.zshrc ~/.zshrc
+curl -o- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
 zsh
 
 # Enable FZF https://github.com/junegunn/fzf
