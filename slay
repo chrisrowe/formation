@@ -171,18 +171,6 @@ print_success "Sensible global .gitignore"
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found please call Chris Rowe on +44 7590 608750 or email mail@chrisrowe.net"
 print_success "Setting lock screen 'If found' message"
 
-# Enable ZSH and install Oh My Zsh
-print_success "Changing shell to ZSH"
-chsh -s /bin/zsh
-print_success "Installing Oh My Zsh"
-cp dotfiles/.zshrc ~/.zshrc
-curl -o- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
-zsh
-
-# Enable FZF https://github.com/junegunn/fzf
-$(brew --prefix)/opt/fzf/install
-print_success "Enabling FZF"
-
 # Enable tap to click for current user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
@@ -271,6 +259,7 @@ defaults write com.apple.dock wvous-tr-corner -int 10
 defaults write com.apple.dock wvous-tr-modifier -int 0
 print_success "Set hot corner"
 
+# Restart everything
 chapter "Rebooting all the things…"
 killall Dock
 print_success "Dock"
@@ -279,6 +268,19 @@ print_success "Finder"
 killall SystemUIServer
 print_success "SystemUIServer"
 
+# Enable ZSH and install Oh My Zsh
+print_success "Changing shell to ZSH"
+chsh -s /bin/zsh
+print_success "Installing Oh My Zsh"
+cp dotfiles/.zshrc ~/.zshrc
+curl -fsS https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
+zsh
+
+# Enable FZF https://github.com/junegunn/fzf
+$(brew --prefix)/opt/fzf/install
+print_success "Enabling FZF"
+
+# Reload zshell
 source ~/.zshrc
 print_success "Reloaded ZSH"
 
