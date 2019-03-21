@@ -1,6 +1,13 @@
 # New computer setup
 - Download this repo and unzip to your home folder
-- `cd ~/formatio && ./slay`
+- `cd ~/formation && ./slay`
+
+---
+
+# After slay has run complete the following
+
+## Enable fzf
+- `$(brew --prefix)/opt/fzf/install`
 
 ## System Prefs
 - Mouse
