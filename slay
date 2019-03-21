@@ -279,6 +279,10 @@ defaults write com.apple.dock wvous-tr-corner -int 10
 defaults write com.apple.dock wvous-tr-modifier -int 0
 print_success "Set hot corner"
 
+# Open readme
+code README.md
+print_warning "README OPEN: Please finish up the remaining setup manually, delete from the readme as you go."
+
 # Restart everything
 chapter "Rebooting all the things…"
 killall Dock
