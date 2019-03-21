@@ -10,6 +10,19 @@
 - Under Sync, change Primary to iCloud
 - Enable Spotlight and 3rd party app integrations in Preferences > Advanced
 
+## SSH
+- Manually export the 2 key files from 1Password to the desktop
+```
+cd ~
+mkdir .ssh
+mv ~/Desktop/id_rsa* ~/.ssh/.
+cd .ssh
+chmod 600 id_rsa
+chmod 644 id_rsa.pub
+# Remove ssh key passphrase
+ssh-keygen -p
+```
+
 ## Dropbox
 - Open Dropbox, sign into Personal and Work
 - Selectively sync just the personal “Sync” folder (do the others later)
@@ -48,19 +61,6 @@
 ## Mail
 - In prefs, under viewing, enable contact images in Mail app
 - Show most recent messages at the top of conversations
-
-## SSH
-- Manually export the 2 key files from 1Password to the desktop
-```
-cd ~
-mkdir .ssh
-mv ~/Desktop/id_rsa* ~/.ssh/.
-cd .ssh
-chmod 600 id_rsa
-chmod 644 id_rsa.pub
-# Remove ssh key passphrase
-ssh-keygen -p
-```
 
 ## Contacts
 - Sort by first name
