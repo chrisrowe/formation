@@ -10,7 +10,8 @@ cd formation
 
 ## 1Password
 - Add Good Work 1Password.com account
-- Open 1Password and sync in via iCloud
+- In Preferences > Advanced > Enable "Allow creation of vaults outside 1Password accounts"
+- Under Sync, change Primary to iCloud
 - Enable Spotlight and 3rd party app integrations in Preferences > Advanced
 
 ## Dropbox
