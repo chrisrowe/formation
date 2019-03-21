@@ -1,14 +1,40 @@
 # New computer setup
-```
 - Download this repo and unzip to your home folder
 - `cd ~/formatio && ./slay`
-```
+
+## System Prefs
+- Mouse
+    - Enable secondary click
+    - Set tracking speed to 6 of 10
+- Keyboard
+    - Keyboard: Set Key Repeat to full, delay to shortest
+    - Shortcuts > Spotlight: Disable "Show Spotlight search"
+- Accessibility
+    - Display
+        - Reduce transparency
+    - Zoom
+        - Use keyboard shortcuts
+        - Use scroll gesture ctrl
+        - Disable smooth images
+- Dock
+    - Disable “Show recent applications in Dock” in System Preferences
+- Internet Accounts
+    - Enable relevant services, iCloud keychain should bring them over
+- Users & Groups
+    - Disable Guest User
 
 ## 1Password
 - Add Good Work 1Password.com account
 - In Preferences > Advanced > Enable "Allow creation of vaults outside 1Password accounts"
 - Under Sync, change Primary to iCloud
 - Enable Spotlight and 3rd party app integrations in Preferences > Advanced
+
+## Finder Preferences
+- New Finder windows show: home folder
+- Sidebar
+    - Remove: Recents, iCloud Drive, CDs/DVDs, Tags
+    - Add home
+- In finders actual sidebar, drag in "Sites", order alphabetically but with home at the top
 
 ## SSH
 - Manually export the 2 key files from 1Password to the desktop
@@ -39,18 +65,6 @@ ssh-keygen -p
 - Open Chrome and sign in to chrisrowenet
 - Wait a few minutes for it to sync all settings and extensions etc.
 
-## System Prefs
-- Keyboard
-    - Shortcuts > Spotlight: Disable "Show Spotlight search"
-- Accessibility
-    - Use keyboard shortcuts
-    - Use scroll gesture ctrl
-    - Disable smooth images
-- Dock
-    - Disable “Show recent applications in Dock” in System Preferences
-- Internet Accounts
-    - enable relevant services, iCloud keychain should bring them over
-
 ## Messages
 - Check signed in and enable Messages in iCloud
 
@@ -67,3 +81,18 @@ ssh-keygen -p
 
 ## Dropbox
 - Disable selective sync (Sync all folders)
+
+## Bartender
+- Launch on login
+- Menu items
+    - Airport Wifi: Hide
+    - Airplay displays: Hide
+    - Clock: Always show
+    - Dropbox: Hide
+    - Dropshare: Show
+    - Harvest: Show
+    - Location Menu: Hide
+    - Spotlight: Always hide
+- Arrange displayed items
+    - Harvest, Dropshare, Bartender, Clock
+
