@@ -12,15 +12,11 @@
 
 ## Dropbox
 - Open Dropbox, sign into Personal and Work
-- Selectively sync just the personal “Sync” folder (do the others later), the Good Work account will do local SmartSync
+- Selectively sync just the personal “Sync” folder (do the others later)
 
 ## Open Alfred
 - Activate the Powerpack, licence in 1Password
-- Set up syncing under the Advanced tab, the folder is in Dropbox/Sync/Alfred, make sure Dropbox has finished syncing - before doing this
-- Remove the default Spotlight shortcut in System Preferences > Keyboard > Shortcuts
-- Change shortcut to cmd+space
-- Enable clipboard history for all types
-- Enable snippets auto expand
+- Set up syncing under the Advanced tab, the folder is in Dropbox/Sync/Alfred, make sure Dropbox has finished syncing before doing this
 - Change theme to macOS Sierra
 
 ## Fonts
@@ -30,27 +26,27 @@
 - Open Chrome and sign in to chrisrowenet
 - Wait a few minutes for it to sync all settings and extensions etc.
 
-## System Zoom
-- Use keyboard shortcuts
-- Use scroll gesture ctrl
-- Disable smooth images
+## System Prefs
+- Keyboard
+    - Shortcuts > Spotlight: Disable "Show Spotlight search"
+- Accessibility
+    - Use keyboard shortcuts
+    - Use scroll gesture ctrl
+    - Disable smooth images
+- Dock
+    - Disable “Show recent applications in Dock” in System Preferences
+- Internet Accounts
+    - enable relevant services, iCloud keychain should bring them over
 
 ## Messages
 - Check signed in and enable Messages in iCloud
-
-## Dock
-- Drag and add “Downloads” to right hand side of Dock
-- Disable “Show recent applications in Dock” in System Preferences
 
 ## Spectacle
 - Run spectacle and disable everything except left/right half, change fullscreen to alt+cmd+up
 - Enable “Launch at login”, change to run as a background app in the footer settings
 
-## Internet accounts
-- Open “Internet accounts” pref pane and enable relevant services, iCloud keychain should bring them over
-
 ## Mail
-- Enable contact images in Mail app
+- In prefs, under viewing, enable contact images in Mail app
 - Show most recent messages at the top of conversations
 
 ## SSH
