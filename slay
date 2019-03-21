@@ -97,6 +97,7 @@ fi
 if [[ $(cli_is_installed 'valet') == 0 ]]; then
   chapter "Installing Valet…"
   composer global require laravel/valet
+  export PATH=$PATH:~/.composer/vendor/bin
   valet install
   brew services start maridadb@10.2
   mkd ~/Sites
