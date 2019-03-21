@@ -1,12 +1,8 @@
 # New computer setup
 ```
-git clone https://github.com/chrisrowe/formation.git
-cd formation
-./slay
+- Download this repo and unzip to your home folder
+- `cd ~/formatio && ./slay`
 ```
-
-## Wallpaper
-- Open Louie Mantia's [Juxtaposition Wallpaper](http://reserve.louie.land/Wallpapers/Juxtaposition/Juxtaposition%20-%20Desktop.jpg) in Safari and use right click > set as wallpaper
 
 ## 1Password
 - Add Good Work 1Password.com account
