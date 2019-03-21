@@ -300,10 +300,6 @@ cp dotfiles/.zshrc ~/.zshrc
 curl -fsS https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
 zsh
 
-# Enable FZF https://github.com/junegunn/fzf
-$(brew --prefix)/opt/fzf/install
-print_success "Enabling FZF"
-
 # Reload zshell
 source ~/.zshrc
 print_success "Reloaded ZSH"
