@@ -82,6 +82,7 @@ ssh-keygen -p
 ## Mail
 - In prefs, under viewing, enable contact images in Mail app
 - Show most recent messages at the top of conversations
+- Move discarded messages into: Archive
 
 ## Contacts
 - Sort by first name
