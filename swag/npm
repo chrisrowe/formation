@@ -11,6 +11,7 @@ jslint::jslint
 nodemon::nodemon
 prettier::prettier
 swiff::swiff
+fast-cli::fast-cli
 tailwindcss::tailwindcss
 terminalizer::terminalizer
 vue-cli::vue
