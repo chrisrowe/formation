@@ -1,6 +1,5 @@
 cssstats-cli::cssstats
 eslint::eslint
-eslint::eslint
 fast-cli::fast
 firebase-tools::firebase-tools
 git-standup::git-standup
