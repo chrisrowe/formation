@@ -21,44 +21,45 @@ brew "yarn"
 brew "zsh"
 brew "cantino/mcfly/mcfly"
 brew "drud/ddev/ddev"
-cask "1password", args: { appdir: "/Applications" }
-cask "adobe-creative-cloud", args: { appdir: "/Applications" }
+cask "1password"
+cask "adobe-creative-cloud"
 cask "arq"
-cask "bartender", args: { appdir: "/Applications" }
-cask "dash", args: { appdir: "/Applications" }
-cask "discord", args: { appdir: "/Applications" }
+cask "bartender"
+cask "dash"
+cask "discord"
 cask "docker"
-cask "doxie", args: { appdir: "/Applications" }
-cask "dropshare", args: { appdir: "/Applications" }
+cask "doxie"
+cask "dropshare"
 cask "figma"
-cask "firefox", args: { appdir: "/Applications" }
-cask "flux", args: { appdir: "/Applications" }
-cask "focus", args: { appdir: "/Applications" }
-cask "google-chrome", args: { appdir: "/Applications" }
-cask "harvest", args: { appdir: "/Applications" }
-cask "iina", args: { appdir: "/Applications" }
-cask "iterm2", args: { appdir: "/Applications" }
-cask "keepingyouawake", args: { appdir: "/Applications" }
+cask "firefox"
+cask "flux"
+cask "focus"
+cask "google-chrome"
+cask "harvest"
+cask "iina"
+cask "iterm2"
+cask "keepingyouawake"
 cask "linear"
-cask "mamp", args: { appdir: "/Applications" }
+cask "mamp"
 cask "ngrok"
 cask "notion"
 cask "paw"
-cask "plex-media-player", args: { appdir: "/Applications" }
+cask "plex-media-player"
 cask "raycast"
+cask "rectangle"
 cask "sequel-ace"
 cask "signal"
-cask "sketch", args: { appdir: "/Applications" }
-cask "skype", args: { appdir: "/Applications" }
-cask "slack", args: { appdir: "/Applications" }
-cask "sonos", args: { appdir: "/Applications" }
-cask "spectacle", args: { appdir: "/Applications" }
-cask "spotify", args: { appdir: "/Applications" }
-cask "steam", args: { appdir: "/Applications" }
+cask "sketch"
+cask "skype"
+cask "slack"
+cask "sonos"
+cask "spotify"
+cask "steam"
 cask "telegram"
-cask "tower", args: { appdir: "/Applications" }
-cask "transmit", args: { appdir: "/Applications" }
-cask "visual-studio-code", args: { appdir: "/Applications" }
+cask "tower"
+cask "transmit"
+cask "visual-studio-code"
+cask "wallpaper"
 cask "whatsapp"
 mas "Better Rename 9", id: 414209656
 mas "DaisyDisk", id: 411643860
