@@ -30,7 +30,7 @@
 ## Finder Preferences
 - New Finder windows show: home folder
 - Sidebar
-    - Remove: Recents, iCloud Drive, CDs/DVDs, Tags
+    - Remove: Recents, CDs/DVDs, Tags etc
     - Add home
 - In finders actual sidebar, drag in "Sites", order alphabetically but with home at the top
 
