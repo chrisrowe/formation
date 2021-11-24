@@ -74,40 +74,13 @@ else
   print_success_muted "Homebrew already installed. Skipping."
 fi
 
-if brew list | grep -Fq brew-cask; then
-  step "Uninstalling old Homebrew-Cask…"
-  brew uninstall --force brew-cask
-  print_success "Homebrew-Cask uninstalled!"
-fi
-
 ###############################################################################
-# INSTALL: brews
+# INSTALL: Brewfile
 ###############################################################################
-if [ -e $cwd/swag/brews ]; then
-  chapter "Installing Homebrew formulae…"
-
-  for brew in $(<$cwd/swag/brews); do
-    install_brews $brew
-  done
-fi
-
-###############################################################################
-# INSTALL: Valet
-###############################################################################
-if [[ $(cli_is_installed 'valet') == 0 ]]; then
-  chapter "Installing Valet…"
-  composer global require laravel/valet
-  export PATH=$PATH:~/.composer/vendor/bin
-  valet install
-  brew services start maridadb@10.2
-  mkd ~/Sites
-  cd ~/Sites
-  valet park
-  cd -
-  cp -R testsite ~/Sites/
-  open http://testsite.test
-else
-  print_success_muted "valet already installed. Skipping."
+if [ -e $cwd/Brewfile ]; then
+  chapter "Installing from Brewfile…"
+  brew bundle
+  print_success "Brewfile processed!"
 fi
 
 ###############################################################################
@@ -116,62 +89,12 @@ fi
 chapter "Updating Homebrew formulae…"
 brew update
 
-###############################################################################
-# INSTALL: casks
-###############################################################################
-if [ -e $cwd/swag/casks ]; then
-  chapter "Installing apps via Homebrew…"
-  brew tap homebrew/cask-drivers # Required for sonos cask
-
-  for cask in $(<$cwd/swag/casks); do
-      install_application_via_brew $cask
-  done
-fi
-
-###############################################################################
-# INSTALL: Mac App Store Apps
-###############################################################################
-chapter "Installing apps from App Store…"
-if [ -x mas ]; then
-
-  print_warning "Please install mas-cli first: brew mas. Skipping."
-
-  else
-
-  if [ -e $cwd/swag/apps ]; then
-    if mas_setup; then
-      # Workaround for associative array in Bash 3
-      # https://stackoverflow.com/questions/6047648/bash-4-associative-arrays-error-declare-a-invalid-option
-      for app in $(<$cwd/swag/apps); do
-        KEY="${app%%::*}"
-        VALUE="${app##*::}"
-        install_application_via_app_store $KEY $VALUE
-      done
-    else
-      print_warning "Please signin to App Store first. Skipping."
-    fi
-  fi
-
-fi
 
 ###############################################################################
 # CLEAN: Homebrew files
 ###############################################################################
 chapter "Cleaning up Homebrew files…"
 brew cleanup 2> /dev/null
-
-###############################################################################
-# INSTALL: npm packages
-###############################################################################
-if [ -e $cwd/swag/npm ]; then
-  chapter "Installing npm packages…"
-
-  for pkg in $(<$cwd/swag/npm); do
-    KEY="${pkg%%::*}"
-    VALUE="${pkg##*::}"
-    install_npm_packages $KEY $VALUE
-  done
-fi
 
 
 ###############################################################################
