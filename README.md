@@ -18,6 +18,8 @@
 - Accessibility
     - Display
         - Reduce transparency
+- Siri
+    - Disable Siri
 - Internet Accounts
     - Enable relevant services, iCloud keychain should bring them over
 
