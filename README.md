@@ -20,8 +20,6 @@
         - Reduce transparency
 - Internet Accounts
     - Enable relevant services, iCloud keychain should bring them over
-- Users & Groups
-    - Disable Guest User
 
 ## 1Password
 - Add Good Work 1Password.com account
