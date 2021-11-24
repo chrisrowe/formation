@@ -171,6 +171,8 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0
 # Reduce show animation duration
 defaults write com.apple.dock autohide-time-modifier -float 0.1
+# Remove recent items section
+defaults write com.apple.dock show-recents -bool false
 print_success "Dock tweaks"
 
 # Remove alt char popup bubble when holding a key
