@@ -49,11 +49,6 @@ chmod 644 id_rsa.pub
 ssh-keygen -p
 ```
 
-## Open Alfred
-- Activate the Powerpack, licence in 1Password
-- Set up syncing under the Advanced tab, the folder is in Dropbox/Sync/Alfred, make sure Dropbox has finished syncing before doing this
-- Change theme to macOS Sierra
-
 ## Fonts
 - Install Dank Mono from Dropbox/Sync
 
