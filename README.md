@@ -59,29 +59,9 @@ ssh-keygen -p
 ## Messages
 - Check signed in and enable Messages in iCloud
 
-## Spectacle
-- Run spectacle and disable everything except left/right half, change fullscreen to alt+cmd+up
-- Enable “Launch at login”, change to run as a background app in the footer settings
-
 ## Mail
-- In prefs, under viewing, enable contact images in Mail app
 - Show most recent messages at the top of conversations
 - Move discarded messages into: Archive
 
 ## Contacts
 - Sort by first name
-
-## Bartender
-- Launch on login
-- Menu items
-    - Airport Wifi: Hide
-    - Airplay displays: Hide
-    - Clock: Always show
-    - Dropbox: Hide
-    - Dropshare: Show
-    - Harvest: Show
-    - Location Menu: Hide
-    - Spotlight: Always hide
-- Arrange displayed items
-    - Harvest, Dropshare, Bartender, Clock
-
